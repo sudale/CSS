@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스박스</title>
+    <style>
+        html,
+        body {
+            background-color: #ffeead;
+            margin: 10px;
+        }
+
+        /* > 컨테이너안 디브 (홈 서치 로그아웃) */
+        .container>div {
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+            color: #ade0ff;
+            min-width: 300px;
+        }
+
+        .home {
+            background-color: #96ceb4;
+        }
+
+        .search {
+            background-color: #ff6f69;
+        }
+
+        .logout {
+            background-color: skyblue;
+        }
+
+        .container {
+            border: 5px solid #ffcc5c;
+            /* 플렉스를 사용시 부모태그에서 자식 아이템들을 정렬 */
+            /* 기본이 가로로 정렬하고 왼쪽에서 정렬 */
+            display: flex;
+            /* 가로 정렬 기능 flex-start center flex-end space-around/between*/
+            justify-content: flex-start;
+            /* 줄바꿈 */
+            flex-wrap: wrap;
+        }
+
+        .home {
+            /* margin-right: auto; */
+            flex: 1;
+            order: 1;
+        }
+
+        .search {
+            flex: 1;
+            order: 3;
+        }
+
+        .logout {
+            margin-left: auto;
+            flex: 1;
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+    </div>
+</body>
+
+</html>

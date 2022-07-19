@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜스폼</title>
+    <style>
+        body {
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: white;
+            width: 300px;
+            height: 300px;
+            /* Transform - rotate, scale, skew */
+            /* rotate(각도) 회전 */
+            /* transform: rotate(25deg); */
+            /* skew(각도): 비스듬하게 회전 */
+            /* transform: skew(25deg); */
+            /* scale(배수) 크기 */
+            /* transform: scale(2); */
+            transition: all 1s ease-in-out;
+            transform-origin: 0 0;
+        }
+
+        .box:hover {
+            /* transform: rotate(180deg); */
+            /* transform: skew(25deg) scale(1.5); */
+            /* transform: scale(2); */
+            /* border-radius: 50%; */
+            background-color: blue;
+            /* translateX 가로이동, Y 세로이동 */
+            /* transform: translateY(100px); */
+            /* transform: translateX(-100px); */
+            /* x & y */
+            transform: rotate(45deg) scale(0.5);
+
+
+            /* transform: translate3d(100px, 100px, 100px); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
